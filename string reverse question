@@ -1,0 +1,44 @@
+package newassessment;
+
+import java.util.StringTokenizer;
+
+import delll.StringRev;
+
+
+
+public class TestOne {
+
+	
+	
+		
+			public void revString (String data1){
+		
+			StringTokenizer tokenizer = new StringTokenizer(data1, " ");
+				while (tokenizer.hasMoreTokens()) {
+					
+				
+					 String s1= tokenizer.nextToken()+" ";
+					 char[] chars0 = s1.toCharArray();
+						
+						
+						
+
+						for(int i = chars0.length-1;i>=0;i--)
+						
+						{System.out.print(chars0[i]);}
+					
+				}
+		
+		}
+			
+			public static void main(String[] args) {
+
+				TestOne test =new TestOne();
+				test.revString("my name is Amrutha");
+				
+				
+			}
+	}
+
+
+
